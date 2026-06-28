@@ -29,3 +29,7 @@
 	background-color: #fff0ed;
 	border-color: turquoise;
 }
+
+@theme {
+	--color-turquoise: #40e0d0;
+}

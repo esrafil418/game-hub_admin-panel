@@ -1,24 +1,357 @@
+# ====================================
+# OS & Editor Files
+# ====================================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.iml
+*.code-workspace
+.sublime-*
+*.sublime-project
+*.sublime-workspace
+
+# ====================================
+# Environment & Config
+# ====================================
+.env
+.env.local
+.env.*.local
+*.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.staging.local
+
+# ====================================
 # Logs
-logs
+# ====================================
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
 lerna-debug.log*
+.pnpm-debug.log*
+vite-log.txt
 
-node_modules
-dist
-dist-ssr
-*.local
+# ====================================
+# Dependency Directories
+# ====================================
+node_modules/
+bower_components/
+jspm_packages/
+.pnpm-store/
+.yarn/
+.yarnrc
+.yarnrc.yml
+.npm/
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+# ====================================
+# Build Outputs
+# ====================================
+dist/
+build/
+out/
+.vercel/
+.netlify/
+.next/
+.nuxt/
+.output/
+.svelte-kit/
+.parcel-cache/
+.stencil/
+.ssr/
+.angular/
+www/
+public/build/
+public/assets/
+*.min.js
+*.min.css
+*.bundle.js
+*.bundle.css
+*.chunk.js
+*.chunk.css
+
+# ====================================
+# Package Manager Lock Files
+# ====================================
+# NPM - Keep or ignore based on team preference
+# package-lock.json
+# Yarn - Keep or ignore based on team preference
+# yarn.lock
+# PNPM - Keep or ignore based on team preference
+# pnpm-lock.yaml
+
+# ====================================
+# Cache Files
+# ====================================
+.cache/
+.cache-loader/
+.eslintcache
+.stylelintcache
+.prettiercache
+.turbo/
+.tsbuildinfo
+*.tsbuildinfo
+.rollup.cache/
+.vite/
+.vitest/
+.nyc_output/
+.coverage/
+coverage/
+htmlcov/
+
+# ====================================
+# Test & Coverage
+# ====================================
+coverage/
+.nyc_output/
+__coverage__/
+test-results/
+tests/e2e/videos/
+tests/e2e/screenshots/
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+playwright-report/
+test-report.html
+junit.xml
+*.test.js
+*.test.ts
+*.spec.js
+*.spec.ts
+*.test.tsx
+*.spec.tsx
+
+# ====================================
+# Storybook
+# ====================================
+storybook-static/
+docs/
+*.stories.js
+*.stories.ts
+*.stories.jsx
+*.stories.tsx
+
+# ====================================
+# Framework Specific - React
+# ====================================
+# Create React App
+/build
+/.env.production
+/.env.development
+/coverage
+
+# Next.js
+/.next/
+/out/
+/server/
+/standalone/
+
+# Gatsby
+/public/
+/.cache/
+/.gatsby/
+
+# Remix
+/build/
+/public/build/
+
+# ====================================
+# Framework Specific - Vue
+# ====================================
+# Vue CLI
+/dist/
+/tests/e2e/videos/
+/tests/e2e/screenshots/
+
+# Nuxt
+/.nuxt/
+/.output/
+/dist/
+/coverage/
+
+# Vite (Vue/React/Svelte)
+/.vite
+/vite.config.js.timestamp-*
+/vite.config.ts.timestamp-*
+*.timestamp-*
+
+# ====================================
+# Framework Specific - Angular
+# ====================================
+/dist/
+/tmp/
+/out-tsc/
+/.angular/
+/.ng_pkg_build/
+/.firebase/
+
+# ====================================
+# Framework Specific - Svelte
+# ====================================
+.svelte-kit/
+/build/
+/package/
+
+# ====================================
+# Framework Specific - Solid
+# ====================================
+/dist/
+/.solid/
+
+# ====================================
+# CSS & Styling
+# ====================================
+*.css.map
+*.scss.map
+*.sass.map
+*.less.map
+*.styl.map
+
+# ====================================
+# TypeScript
+# ====================================
+*.tsbuildinfo
+*.js.map
+*.d.ts.map
+*.d.ts
+# Keep .d.ts if you're building a library:
+# !*.d.ts
+
+# ====================================
+# Static Assets (Generated)
+# ====================================
+/sprites/
+/sprite/
+/generated/
+/assets/optimized/
+/favicon.ico
+/*.png
+/*.jpg
+/*.jpeg
+/*.gif
+/*.svg
+!**/assets/**/*.png
+!**/assets/**/*.jpg
+!**/assets/**/*.svg
+
+# ====================================
+# PWA & Service Workers
+# ====================================
+sw.js
+sw.*.js
+workbox-*.js
+service-worker.js
+service-worker.*.js
+*.worker.js
+*.worker.ts
+
+# ====================================
+# i18n / Localization (Generated)
+# ====================================
+/i18n/*.json
+!i18n/en.json
+!i18n/fr.json
+/locales/*.json
+!locales/en.json
+
+# ====================================
+# Docker & Container
+# ====================================
+*.pid
+*.pid.lock
+*.port
+*.sock
+.dockerignore
+Dockerfile.dev
+docker-compose.override.yml
+docker-compose.dev.yml
+.docker/
+
+# ====================================
+# CI/CD & Deployment
+# ====================================
+/.github/
+/.gitlab/
+/.circleci/
+/.travis.yml
+/.jenkins/
+/deploy/
+/deployment/
+*.pem
+*.ppk
+*.pub
+.ssh/
+.aws/
+.gcloud/
+.kube/
+.helm/
+/vercel.json
+/netlify.toml
+/now.json
+/surge.json
+
+# ====================================
+# Debug & Profiling
+# ====================================
+*.heapdump
+*.cpuprofile
+*.heapsnapshot
+*.v8.log
+*.trace
+*.prof
+.chromium-browser-snapshots/
+.firebase/
+.functions/
+
+# ====================================
+# Misc
+# ====================================
+*.bak
+*.backup
+*.orig
+*.rej
+*.patch
+*.diff
+*.tmp
+*.temp
+*~
+*.lock
+*.pid
+*.seed
+Session.vim
+.viminfo
+*.tgz
+*.tar.gz
+*.zip
+
+# ====================================
+# Custom Front-End Specific
+# ====================================
+# GraphQL
+.graphqlconfig
+/generated/
+/graphql/generated/
+
+# Tailwind CSS
+/tailwind-output.css
+
+# Fonts (if generated)
+/fonts/
+/fonts-generated/
+
+# Icons (if generated)
+/icons/
+/icons-generated/
+
+# API mocks
+/mocks/
+/__mocks__/
+
+# Storybook iframes
+iframe.html

@@ -1,1 +1,26 @@
 @import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Outfit:wght@100..900&display=swap");
+
+@theme {
+  --font-comfortaa: "Comfortaa", cursive;
+  --font-outfit: "Outfit", sans-serif;
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+  }
+
+  body {
+    background-color: #fcfcfc;
+  }
+
+  hr {
+    height: 1px;
+    background-color: #e5e5e5;
+  }
+}

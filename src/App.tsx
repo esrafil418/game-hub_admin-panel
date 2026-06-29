@@ -4,10 +4,12 @@ import Sidebar from "./components/sidebar/Sidebar";
 import Add from "./page/add/Add";
 import List from "./page/list/List";
 import Orders from "./page/orders/Orders";
+import { ToastContainer } from "react-toastify";
 
 export default function App() {
 	return (
 		<div>
+			<ToastContainer />
 			<Navbar />
 			<hr />
 			<div className="flex">

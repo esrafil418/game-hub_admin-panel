@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { assets } from "../../assets/assets";
 import axios from "axios";
+import { toast } from "react-toastify";
 
 export default function Add() {
 	type ProductData = {
@@ -49,7 +50,9 @@ export default function Add() {
 				category: "",
 			});
 			setImage(false);
+			toast.success(response.data.message);
 		} else {
+			toast.error(response.data.message);
 		}
 	};
 
